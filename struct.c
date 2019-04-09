@@ -8,7 +8,7 @@ typedef struct{
 u **uu;    
 int main() {
     
-    uu=(u**)malloc(sizeof(u*)*4);
+    uu=(u**)malloc(sizeof(u*)*4); //or uu=malloc(sizeof(u*)*4)
     u test1;
     *uu=&test1;
     (*uu)->x=9;
